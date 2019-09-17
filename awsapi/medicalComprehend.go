@@ -3,6 +3,7 @@ package awsapi
 import (
 	"fmt"
 	"medicalRecognition/medicine"
+	"strings"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
@@ -16,8 +17,10 @@ func DetectEntities(textFromImage string) medicine.Medicine {
 	medicalComp := comprehendmedical.New(sess, &aws.Config{
 		Region: aws.String("us-east-1"),
 	})
+	textFromImageProcessed := strings.ToLower(textFromImage)
+
 	entities, err := medicalComp.DetectEntities(&comprehendmedical.DetectEntitiesInput{
-		Text: &textFromImage,
+		Text: &textFromImageProcessed,
 	})
 	if err != nil {
 		fmt.Println(err)

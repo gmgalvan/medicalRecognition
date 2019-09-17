@@ -16,7 +16,7 @@ func NewIbuprofeno() Medicine {
 	ibuprofeno := Medicine{}
 	ibuprofeno.Text = "ibuprofeno"
 	ibuprofeno.Description = "ibuprofeno text"
-	ibuprofeno.LinkRef = "https://www.farmaciasanpablo.com.mx/search/?text=ibuprofeno"
+	ibuprofeno.LinkRef = ""
 	ibuprofeno.Host = "/ibuprofeno"
 	return ibuprofeno
 }
@@ -25,7 +25,7 @@ func NewLoperamida() Medicine {
 	loperamida := Medicine{}
 	loperamida.Text = "loperamida"
 	loperamida.Description = "loperamida text"
-	loperamida.LinkRef = "https://www.farmaciasanpablo.com.mx/search/?text=loperamida"
+	loperamida.LinkRef = ""
 	loperamida.Host = "/loperamida"
 	return loperamida
 }

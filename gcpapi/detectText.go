@@ -19,9 +19,6 @@ func TextInPicture(inputImge []byte) string {
 	}
 	defer client.Close()
 
-	//fileUrl := "https://gmtestimages.s3.amazonaws.com/ibu.jpeg"
-	//image := vision.NewImageFromURI(fileUrl)
-
 	ioImage := bytes.NewReader(inputImge)
 	image, _ := vision.NewImageFromReader(ioImage)
 

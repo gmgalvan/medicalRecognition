@@ -38,7 +38,6 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 
 	textFromImage := gcpapi.TextInPicture(fileBytes)
 	drug := awsapi.DetectEntities(textFromImage)
-	fmt.Println(drug)
 	path := drug.Host + ".html"
 	http.Redirect(w, r, path, 301)
 }
