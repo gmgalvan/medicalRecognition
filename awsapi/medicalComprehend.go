@@ -33,5 +33,6 @@ func DetectEntities(textFromImage string) medicine.Medicine {
 		}
 	}
 	var med medicine.Medicine
+	med.Host = "/notfound"
 	return med
 }
