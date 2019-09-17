@@ -12,4 +12,5 @@ Run the project on port 8081:
 Identifies medical boxes that are writen in spanish:
  - Loperamida
  - Ibuprofeno
+ 
 Note: Somethimes identifies handwritten letter.
