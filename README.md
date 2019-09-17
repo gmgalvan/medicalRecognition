@@ -16,6 +16,7 @@ GCP Vision Api
   export GOOGLE_APPLICATION_CREDENTIALS="cred.json"
   ```
 AWS medical comprehend Api
+- Create a .aws folder
 - Set aws credentials file and config file into the .aws folder
 
 ## Usage
